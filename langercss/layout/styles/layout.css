@@ -336,7 +336,7 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#F9F9F9;background-color: #cadeeb;}
+body{background: linear-gradient(90deg,#2980b9,#8e44ad);}
 
 a{color:#170eb3;}
 
@@ -346,6 +346,7 @@ hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
 
 .rounded{color:inherit; background-color:#F9F9F9;}
+
 
 
 /* Rows */

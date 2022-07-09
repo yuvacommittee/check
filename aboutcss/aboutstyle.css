@@ -428,7 +428,8 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#F9F9F9; background-color:#06213F;}
+body{background: linear-gradient(90deg,#2980b9,#8e44ad);}
+
 
 a{color:#55ABDA;}
 
