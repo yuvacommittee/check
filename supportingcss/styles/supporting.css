@@ -68,7 +68,7 @@ File: Layout CSS
 --------------------------------------------------------------------------------------------------------------- */
 .container{padding:20px 10px;}
 
-.container h1, .container h2, .container h3, .container h4, .container h5, .container h6, .container .heading{padding-bottom:8px; border-bottom:1px solid; font-size: 30px;}
+.container h1, .container h2, .container h3, .container h4, .container h5, .container h6, .container .heading{padding-bottom:8px; border-bottom:1px solid;font-size: 30px;}
 
 /* Content */
 .container #content{}
@@ -231,7 +231,7 @@ td{border-width:0 1px;}
   color: #FFF;
 }
 .responstable td {
-  display: block;
+   display: inline-block;;
 }
 .responstable td:first-child {
   padding-top: .5em;
@@ -239,7 +239,7 @@ td{border-width:0 1px;}
 .responstable td:last-child {
   padding-bottom: .5em;
 }
-.responstable td:before {
+.responstable td:middle {
   content: attr(data-th) ": ";
   font-weight: bold;
   width: 8em;
@@ -256,13 +256,13 @@ td{border-width:0 1px;}
   }
 }
 .responstable th, .responstable td {
-  text-align: left;
-  margin: .5em 1em;
+  text-align: center;
+  margin: 2em 1em;
 }
 @media (min-width: 480px) {
   .responstable th, .responstable td {
     display: table-cell;
-    padding: 1em;
+    padding: .2em;
   }
   .responstable th:first-child, .responstable td:first-child {
     text-align: center;
@@ -336,11 +336,10 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#F9F9F9;background-color: #cadeeb;
-  }
+body{background: linear-gradient(90deg,#2980b9,#8e44ad);}
 
-a{color:whitesmoke;}
 
+a{color:#cb1eb;}
 
 hr, .borderedbox{border-color:#D7D7D7;}
 
@@ -348,114 +347,16 @@ label span{color:#FF0000; background-color:inherit;}
 
 .rounded{color:inherit; background-color:#F9F9F9;}
 
-.rounded1{color:inherit; .contact100-form-bgbtn 
-    position: absolute;
-    z-index: -1;
-    background: #a64bf4;
-    background: -webkit-linear-gradient(left,#52de00,#f409d9,#09f41f,#00e7ff);
-    background: -o-linear-gradient(left#52de00,#f409d9,#09f41f,#00e7ff);
-    background: -moz-linear-gradient(left,#52de00,#f409d9,#09f41f,#00e7ff);
-    background: linear-gradient(left,#52de00,#f409d9,#09f41f,#00e7ff);
-    top: 0;
-    left: -100%;
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    -moz-transition: all .4s;
-    transition: all .4s;
-}
-
-.rounded2{color:inherit; .contact100-form-bgbtn 
-    position: absolute;
-    z-index: -1;
-    background: #a64bf4;
-    background: -webkit-linear-gradient(right,#fc00ff,#fc00ff,#fc00ff,#e3e136);
-    background: -o-linear-gradient(right,#fc00ff,#fc00ff,#fc00ff,#e3e136);
-    background: -moz-linear-gradient(right,#fc00ff,#fc00ff,#fc00ff,#e3e136);
-    background: linear-gradient(right,#fc00ff,#fc00ff,#fc00ff,#e3e136);
-    top: 0;
-    left: -100%;
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    -moz-transition: all .4s;
-    transition: all .4s;
-}   
-.rounded3{color:inherit; .contact100-form-bgbtn 
-    position: absolute;
-    z-index: -1;
-    background: #a64bf4;
-    background: -webkit-linear-gradient(left,#ffec00,#eeaeca,#ffec00,#eeaeca);
-    background: -o-linear-gradient(left,#ffec00,#eeaeca,#ffec00,#eeaeca);
-    background: -moz-linear-gradient(left,#ffec00,#eeaeca,#ffec00,#eeaeca);
-    background: linear-gradient(left,#ffec00,#eeaeca,#ffec00,#eeaeca);
-    top: 0;
-    left: -100%;
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    -moz-transition: all .4s;
-    transition: all .4s;
-}
-.rounded4{color:inherit; .contact100-form-bgbtn 
-    position: absolute;
-    z-index: -1;
-    background: #a64bf4;
-    background: -webkit-linear-gradient(left,#09f4e6,#33bd40,#33bd40,#09f4e6);
-    background: -o-linear-gradient(left,#09f4e6,#33bd40,#33bd40,#09f4e6);
-    background: -moz-linear-gradient(left,#09f4e6,#33bd40,#33bd40,#09f4e6);
-    background: linear-gradient(left,#09f4e6,#33bd40,#33bd40,#09f4e6);
-    top: 0;
-    left: -100%;
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    -moz-transition: all .4s;
-    transition: all .4s;
-}
-.rounded5{color:inherit; .contact100-form-bgbtn 
-    position: absolute;
-    z-index: -1;
-    background: #a64bf4;
-    background: -webkit-linear-gradient(left,#e3e136,#fc00ff,#00dbde,#e3e136);
-    background: -o-linear-gradient(left,#e3e136,#fc00ff,#00dbde,#e3e136);
-    background: -moz-linear-gradient(left,#e3e136,#fc00ff,#00dbde,#e3e136);
-    background: linear-gradient(left,#e3e136,#fc00ff,#00dbde,#e3e136);
-    top: 0;
-    left: -100%;
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    -moz-transition: all .4s;
-    transition: all .4s;
-};}
-
-
 
 /* Rows */
 .row0, .row0 a{color:#F9F9F9; background-color:#06213F;}
 .row1{color:#979797; background-color:#06213F;}
 .row1 a{color:#F9F9F9; background-color:inherit;}
 .row2, .row2 a{color:#06213F; background-color:inherit;}
-.row3{color:#ef0a0a; font-size: 28px; background-color:inherit;}
+.row3{color:#000000; font-size: 14px; background-color:inherit;}
 .row4{color:#e90b36; background-color:inherit;}
 .row5, .row5 a{color:#55ABDA; background-color:#06213F;}
-.row45, .row5 a{color:whitesmoke; background-color:#06213F;}
 
-
-/* ab tak hue langer */
-.change_content:after{
-  content: '';
-  animation: chnagetext 10s infinite linear;
-  color: whitesmoke;
-
-}
-
-@keyframes chnagetext{
- 0%{ content:"  नियाज़ ए ख्वाजा गरीब नवाज़-5-मार्च-2020    "; }
-  20%{ content:" नियाज़ ए मोहर्रम लंगर-31-अगस्त-2020 "; }
-  40%{ content:"  नियाज़ ए ख्वाजा गरीब नवाज़-4-फरबरी-2021  "; }
-  60%{ content:" नियाज़ ए मोहर्रम लंगर-20-अगस्त-2021 "; }
-  100%{ content:"  नियाज़ ए ख्वाजा गरीब नवाज़-8-फरबरी-2022  "; }
-  
-  
-
-}
 
 /* Top Bar */
 #topbar li{border-color:#FFFFFF;}
@@ -476,7 +377,10 @@ label span{color:#FF0000; background-color:inherit;}
 /* Content Area */
 .container h1, .container h2, .container h3, .container h4, .container h5, .container h6, .container .heading{border-color:#ea2b2b;text-align: center;}
 
-h1 {}
+h1 {
+    border-color: #ea2b2b;
+    text-align: center;
+}
 #twitter{color:#FFFFFF; background-color:#06213F;}
 #twitter div:first-child{border-color:#FFFFFF;}
 
@@ -486,10 +390,6 @@ h1 {}
 .quickinfo li a:hover{color:#FFFFFF; background-color:#06213F;}
 
 
-/* For enquairy content style */
-.div .h1 .class{
-  height: 10%;
-}
 
 /* Footer */
 #footer .faico a{box-shadow:2px 2px 0 0 rgba(0,0,0,.5); border-color:rgba(0,0,0,.2);}
@@ -515,7 +415,6 @@ h1 {}
 .pagination .current strong{color:#FFFFFF; background-color:#06213F;}
 
 
-
 /* Tables + Comments */
 table, th, td, #comments .avatar, #comments input, #comments textarea{border-color:#D7D7D7;}
 th{color:#FFFFFF; background-color:#373737;}
@@ -539,7 +438,7 @@ table a, #comments a{background-color:inherit;}
 /* Smartphone + Tablet
 ---------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width:180px) and (max-width:750px) {
-.imgl, .imgr{display:inline-block;float: left;margin:0 0 10px 0;}
+	.imgl, .imgr{display:inline-block; float:left; margin:0 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
 	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
 }
@@ -602,19 +501,4 @@ table a, #comments a{background-color:inherit;}
 @media screen and (max-width:650px) {
 	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
 	.scrollable table{margin:0; padding:0; white-space:nowrap;}
-}
-
-/* Other
----------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-label {
-    display: block;
-    font: 1rem 'Fira Sans', sans-serif;
-}
-
-input,
-label {
-    left: 10px;
-    margin: .4rem 0;
 }
