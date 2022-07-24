@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="font.cs" rel="stylesheet" type="text/css" media="all">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+	<title>Message</title>
+</head>
+<body>
+
+    <div class="container py-5" >
+  <div class="row" >
+    <div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-5 rounded" >
+      <h2 class="text-center fw-bold mb-4" >FeedBack</h2>
+      <form name="google-sheet" >
+        <div class="form-group mb-4">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="enter your name" required>
+          </div>
+          <div class="form-group mb-4">
+          <label for="mobile number" class="form-label">Mobile Number</label>
+          <input type="number" id="mobile number" name="mobile number" class="form-control" placeholder="enter your mobile number" required>
+          </div>
+          <div class="form-group mb-4">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="enter your email address" required>
+          </div>
+          <div class="form-group-4">
+          <label for="message" class="form-label">Message</label>
+          <textarea  id="message" name="message" class="form-control" placeholder="enter your message" rows="5" required></textarea>
+          </div>
+
+          <div>
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <button class="btn btn-danger" type="submit">Reset the form</button>
+
+          </div>
+       </form>  
+    </div>
+  </div>
+  
+</div>
+
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+             const scriptURL = 'https://script.google.com/macros/s/AKfycbwKFPQCnOibfwMuik9QqP2lR_0EuUijBlMAoTE8oPtMPOKvW5P5Xh7UIGdoVcvvvUwb6A/exec'
+             const form = document.forms['google-sheet']
+
+             form.addEventListener('submit', e => {
+             e.preventDefault()
+             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+             .then(response => console.log('Success!', response))
+             .catch(error => console.error('Error!', error.message))
+             })
+  </script>
+
+	
+
+</body>
+</html>
