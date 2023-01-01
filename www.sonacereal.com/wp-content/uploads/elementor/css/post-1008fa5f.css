@@ -1,0 +1,58 @@
+.elementor-1008 .elementor-element.elementor-element-8fafb70:not(.elementor-motion-effects-element-type-background), .elementor-1008 .elementor-element.elementor-element-8fafb70 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("../../2022/02/banner-policies.jpg");background-position:center center;background-repeat:no-repeat;background-size:cover;}.elementor-1008 .elementor-element.elementor-element-8fafb70 > .elementor-background-overlay{background-color:#000000;opacity:0.2;transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-1008 .elementor-element.elementor-element-8fafb70{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:180px 0px 180px 0px;}.elementor-1008 .elementor-element.elementor-element-a31d547 .elementor-heading-title{color:#FFFFFF;font-family:"Albra", Sans-serif;font-size:70px;font-weight:600;text-transform:capitalize;}.elementor-bc-flex-widget .elementor-1008 .elementor-element.elementor-element-e64dfca.elementor-column .elementor-widget-wrap{align-items:center;}.elementor-1008 .elementor-element.elementor-element-e64dfca.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated{align-content:center;align-items:center;}.elementor-1008 .elementor-element.elementor-element-03c5788 .elementor-icon-list-icon i{color:#FFFFFF;}.elementor-1008 .elementor-element.elementor-element-03c5788 .elementor-icon-list-icon svg{fill:#FFFFFF;}.elementor-1008 .elementor-element.elementor-element-03c5788{--e-icon-list-icon-size:18px;--e-icon-list-icon-align:center;--e-icon-list-icon-margin:0 calc(var(--e-icon-list-icon-size, 1em) * 0.125);}.elementor-1008 .elementor-element.elementor-element-03c5788 .elementor-icon-list-text{color:#FFFFFF;padding-left:7px;}.elementor-1008 .elementor-element.elementor-element-03c5788 .elementor-icon-list-item:hover .elementor-icon-list-text{color:#E99701;}.elementor-1008 .elementor-element.elementor-element-03c5788 .elementor-icon-list-item > .elementor-icon-list-text, .elementor-1008 .elementor-element.elementor-element-03c5788 .elementor-icon-list-item > a{font-family:"Ilisarniq", Sans-serif;font-size:15px;font-weight:400;}.elementor-1008 .elementor-element.elementor-element-855af5b{margin-top:50px;margin-bottom:50px;}.elementor-1008 .elementor-element.elementor-element-3068efd .elementor-heading-title{color:#000000;font-family:"Albra", Sans-serif;font-size:30px;font-weight:600;}.elementor-1008 .elementor-element.elementor-element-06be609{color:#000000;font-family:"Ilisarniq", Sans-serif;font-size:15px;font-weight:400;}.elementor-1008 .elementor-element.elementor-element-5116305 .elementor-heading-title{color:#000000;font-family:"Albra", Sans-serif;font-size:30px;font-weight:600;}.elementor-1008 .elementor-element.elementor-element-3db942d{color:#000000;font-family:"Ilisarniq", Sans-serif;font-size:15px;font-weight:400;}@media(min-width:768px){.elementor-1008 .elementor-element.elementor-element-148c47c{width:70%;}.elementor-1008 .elementor-element.elementor-element-e64dfca{width:30%;}}@media(max-width:1024px){.elementor-1008 .elementor-element.elementor-element-8fafb70{padding:180px 20px 180px 20px;}.elementor-1008 .elementor-element.elementor-element-a31d547 .elementor-heading-title{font-size:60px;}.elementor-1008 .elementor-element.elementor-element-03c5788 .elementor-icon-list-item > .elementor-icon-list-text, .elementor-1008 .elementor-element.elementor-element-03c5788 .elementor-icon-list-item > a{font-size:17px;}.elementor-1008 .elementor-element.elementor-element-06be609{font-size:18px;}.elementor-1008 .elementor-element.elementor-element-3db942d{font-size:18px;}}@media(max-width:767px){.elementor-1008 .elementor-element.elementor-element-8fafb70{padding:100px 0px 50px 0px;}.elementor-1008 .elementor-element.elementor-element-a31d547 .elementor-heading-title{font-size:50px;}}@media(min-width:1025px){.elementor-1008 .elementor-element.elementor-element-8fafb70:not(.elementor-motion-effects-element-type-background), .elementor-1008 .elementor-element.elementor-element-8fafb70 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-attachment:scroll;}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Albra';
+	font-style: normal;
+	font-weight: 800;
+	font-display: auto;
+	src: url('../../2022/02/Albra-Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Albra';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('../../2022/02/Albra-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Albra';
+	font-style: normal;
+	font-weight: 300;
+	font-display: auto;
+	src: url('../../2022/02/Albra-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Albra';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('../../2022/02/Albra-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Albra';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('../../2022/02/Albra-Regular.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Ilisarniq';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('../../2022/02/Ilisarniq-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ilisarniq';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('../../2022/02/Ilisarniq-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ilisarniq';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('../../2022/02/Ilisarniq-Bold.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */
