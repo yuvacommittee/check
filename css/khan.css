@@ -445,9 +445,15 @@ h1{
     text-align: center;
     font-weight: bold;
     letter-spacing: 2px;
-    color: #333;
     padding-bottom: 10px;
 
+}
+h1 {
+    background: #dd5b8d;
+    background: linear-gradient(to right, #dd5b8d 0%, #564EB0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 h1:after
 {
@@ -726,3 +732,121 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     min-height: 1px;
 }
 a, abbr,
+
+
+.home-page-search__keyword-list-item {
+    display: inline-block;
+    padding: 0 4px 8px 4px;
+}
+/* ab tak hue langer */
+.change_content:after{
+  content: '';
+  animation: chnagetext 10s infinite linear;
+  color: black;
+
+}
+
+@keyframes chnagetext{
+ 0%{ content:"1:-  नियाज़ ए ख्वाजा गरीब नवाज़-5-मार्च-2020    "; }
+  14.28%{ content:"2:- नियाज़ ए मोहर्रम लंगर-31-अगस्त-2020 "; }
+ 28.56%{ content:"3  नियाज़ ए ख्वाजा गरीब नवाज़-14-फरबरी-2021  "; }
+ 42.84%{ content:"4 नियाज़ ए मोहर्रम लंगर-20-अगस्त-2021 "; }
+  71.4%{ content:"5  नियाज़ ए ख्वाजा गरीब नवाज़-8-फरबरी-2022  "; }
+ 85.68%{ content:"6  नियाज़ ए मोहर्रम लंगर-9-अगस्त-2022  "; }
+  100%{ content:"7  नियाज़ ए गौस पाक-11-नवम्बर-2022  "; }
+  
+
+
+.rounded1{color:inherit; .contact100-form-bgbtn 
+    position: absolute;
+    z-index: -1;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(left,#52de00,#d15f73,#4a624c,#00e7ff);
+    background: -o-linear-gradient(left,#52de00,#d15f73,#4a624c,#00e7ff);
+    background: -moz-linear-gradient(left,#52de00,#d15f73,#4a624c,#00e7ff);
+    background: linear-gradient(left,#52de00,#d15f73,#4a624c,#00e7ff);
+    top: 0;
+    left: -100%;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+
+.rounded2{color:inherit; .contact100-form-bgbtn 
+    position: absolute;
+    z-index: -1;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(right,#fc00ff,#fc00ff,#fc00ff,#e3e136);
+    background: -o-linear-gradient(right,#fc00ff,#fc00ff,#fc00ff,#e3e136);
+    background: -moz-linear-gradient(right,#fc00ff,#fc00ff,#fc00ff,#e3e136);
+    background: linear-gradient(right,#fc00ff,#fc00ff,#fc00ff,#e3e136);
+    top: 0;
+    left: -100%;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}   
+.rounded3{color:inherit; .contact100-form-bgbtn 
+    position: absolute;
+    z-index: -1;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(left,#686427,#686427,#686427,#eeaeca);
+    background: -o-linear-gradient(left,#686427,#686427,#686427,#eeaeca);
+    background: -moz-linear-gradient(left,#686427,#686427,#ffec00,#eeaeca);
+    background: linear-gradient(left,#686427,#686427,#686427,#eeaeca);
+    top: 0;
+    left: -100%;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+.rounded4{color:inherit; .contact100-form-bgbtn 
+    position: absolute;
+    z-index: -1;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(left,#09f4e6,#33bd40,#33bd40,#09f4e6);
+    background: -o-linear-gradient(left,#09f4e6,#33bd40,#33bd40,#09f4e6);
+    background: -moz-linear-gradient(left,#09f4e6,#33bd40,#33bd40,#09f4e6);
+    background: linear-gradient(left,#09f4e6,#33bd40,#33bd40,#09f4e6);
+    top: 0;
+    left: -100%;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+.rounded5{color:inherit; .contact100-form-bgbtn 
+    position: absolute;
+    z-index: -1;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(left,#e3e136,#fc00ff,#00dbde,#e3e136);
+    background: -o-linear-gradient(left,#e3e136,#fc00ff,#00dbde,#e3e136);
+    background: -moz-linear-gradient(left,#e3e136,#fc00ff,#00dbde,#e3e136);
+    background: linear-gradient(left,#e3e136,#fc00ff,#00dbde,#e3e136);
+    top: 0;
+    left: -100%;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+};}
+.rounded5 {
+    color: inherit;
+    .contact100-form-bgbtn: ;
+    position: absolute;
+    z-index: -1;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(left,#e3e136,#fc00ff,#00dbde,#e3e136);
+    background: -o-linear-gradient(left,#e3e136,#fc00ff,#00dbde,#e3e136);
+    background: -moz-linear-gradient(left,#e3e136,#fc00ff,#00dbde,#e3e136);
+    background: linear-gradient(left,#e3e136,#fc00ff,#00dbde,#e3e136);
+    top: 0;
+    left: -100%;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
