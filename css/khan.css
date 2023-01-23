@@ -247,6 +247,7 @@ hr{display:block; width:100%; height:1px; border:solid; border-width:1px 0 0 0;}
 
 /* Tables
 --------------------------------------------------------------------------------------------------------------- */
+/*-----
 table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top; box-sizing:border-box;}
 table, th{table-layout:auto;}
 table{width:100%; margin-bottom:15px;}
@@ -256,14 +257,15 @@ td{border-width:0 1px;}
 
 
 .responstable {
-    /* margin: 1em 0; */
+    /* margin: 1em 0; */ /* ----
     width: 100%;
     background: #FFF;
     color: #570202;
     border-radius: 10px;
     border: 1px solid #921616 !important;
-    /* overflow: hidden; */
+    /* overflow: hidden; */ /* 
 }
+
 .responstable tr {
       border-top: 1px solid #921616;
     border-bottom: 1px solid #921616;
@@ -316,7 +318,7 @@ td{border-width:0 1px;}
     text-align: center;
   }
 }
-
+-----*/
 
 /*--------gallery-------*/
 
@@ -358,7 +360,7 @@ td{border-width:0 1px;}
     font-size: 14px;
     line-height: 1.4em;
 }
-.rounded2 {
+.rounded7 {
     color: inherit;
     .contact100-form-bgbtn: ;
     position: absolute;
@@ -602,14 +604,16 @@ input,#message.form-control
     font-weight: 500;
     text-transform: capitalize;
 }
-.btn-primary {
+.btn-khan{
     color: #fff;
-    background-color: black;
+    background-color: #007bff;
     border-color: #007bff;
+    margin-top: 10px;
 }
-.button,.btn.btn-primary{ display: inline-block;
+.button,.btn.btn-khan{ display: inline-block;
     margin-bottom: 5px;
     font-weight: 400;
+    font-size: 35px;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -624,22 +628,7 @@ input,#message.form-control
     border-radius: 0.25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-button,.btn.btn-danger{ display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 15px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 2rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
+
 
 .btn{
     display: inline-block;
@@ -662,7 +651,7 @@ button,.btn.btn-danger{ display: inline-block;
 /*-----slide show------*/
 
 
-
+.span,.change_content{font-size: 20px}
 /* ab tak hue langer */
 .change_content:after{
   content: '';
@@ -677,9 +666,65 @@ button,.btn.btn-danger{ display: inline-block;
  28.56%{ content:"3  नियाज़ ए ख्वाजा गरीब नवाज़-14-फरबरी-2021  "; }
  42.84%{ content:"4 नियाज़ ए मोहर्रम लंगर-20-अगस्त-2021 "; }
   71.4%{ content:"5  नियाज़ ए ख्वाजा गरीब नवाज़-8-फरबरी-2022  "; }
- 85.68%{ content:"6  नियाज़ ए मोहर्रम लंगर-9-अगस्त-2022  "; }
+ 80.68%{ content:"6  नियाज़ ए मोहर्रम लंगर-9-अगस्त-2022  "; }
   100%{ content:"7  नियाज़ ए गौस पाक-11-नवम्बर-2022  "; }
   
 
 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #040d15;
+}
 
+.button.a {
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 300px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    overflow: hidden;
+    background:linear-gradient(90deg,#0162c8,#55e7fc);
+
+}
+.a:nth-child(2)
+{background:linear-gradient(90deg,#755bea,#ff72c0);
+
+
+}
+
+span{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%
+    {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+
+}
+
+
+------------------*/
