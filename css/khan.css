@@ -539,6 +539,10 @@ form label {
 .h2,.text-center,.fw-bold.mb-4 animated infinite pulse {
     font-size: 35px;
 }
+.h8{
+     font-size: 35px;
+
+}
 
 .fw-bold {
     font-weight: 700!important;
