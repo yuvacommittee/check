@@ -1,0 +1,61 @@
+.elementor-999 .elementor-element.elementor-element-1526895:not(.elementor-motion-effects-element-type-background), .elementor-999 .elementor-element.elementor-element-1526895 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("../../2022/02/banner-policies.jpg");background-position:center center;background-repeat:no-repeat;background-size:cover;}.elementor-999 .elementor-element.elementor-element-1526895 > .elementor-background-overlay{background-color:#000000;opacity:0.2;transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-999 .elementor-element.elementor-element-1526895{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:180px 0px 180px 0px;}.elementor-999 .elementor-element.elementor-element-d1c2d6a .elementor-heading-title{color:#FFFFFF;font-family:"Albra", Sans-serif;font-size:70px;font-weight:600;text-transform:capitalize;}.elementor-bc-flex-widget .elementor-999 .elementor-element.elementor-element-be4b1ff.elementor-column .elementor-widget-wrap{align-items:center;}.elementor-999 .elementor-element.elementor-element-be4b1ff.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated{align-content:center;align-items:center;}.elementor-999 .elementor-element.elementor-element-1ae0c6e .elementor-icon-list-icon i{color:#FFFFFF;transition:color 0.3s;}.elementor-999 .elementor-element.elementor-element-1ae0c6e .elementor-icon-list-icon svg{fill:#FFFFFF;transition:fill 0.3s;}.elementor-999 .elementor-element.elementor-element-1ae0c6e{--e-icon-list-icon-size:18px;--e-icon-list-icon-align:center;--e-icon-list-icon-margin:0 calc(var(--e-icon-list-icon-size, 1em) * 0.125);--icon-vertical-offset:0px;}.elementor-999 .elementor-element.elementor-element-1ae0c6e .elementor-icon-list-icon{padding-right:7px;}.elementor-999 .elementor-element.elementor-element-1ae0c6e .elementor-icon-list-item > .elementor-icon-list-text, .elementor-999 .elementor-element.elementor-element-1ae0c6e .elementor-icon-list-item > a{font-family:"Ilisarniq", Sans-serif;font-size:15px;font-weight:400;}.elementor-999 .elementor-element.elementor-element-1ae0c6e .elementor-icon-list-text{color:#FFFFFF;transition:color 0.3s;}.elementor-999 .elementor-element.elementor-element-1ae0c6e .elementor-icon-list-item:hover .elementor-icon-list-text{color:#E99701;}.elementor-999 .elementor-element.elementor-element-29d840d{margin-top:50px;margin-bottom:50px;}.elementor-999 .elementor-element.elementor-element-8416378{color:#000000;font-family:"Ilisarniq", Sans-serif;font-size:15px;font-weight:400;}@media(min-width:768px){.elementor-999 .elementor-element.elementor-element-90d0853{width:70%;}.elementor-999 .elementor-element.elementor-element-be4b1ff{width:30%;}}@media(max-width:1024px){.elementor-999 .elementor-element.elementor-element-1526895{padding:180px 20px 180px 20px;}.elementor-999 .elementor-element.elementor-element-d1c2d6a .elementor-heading-title{font-size:60px;}.elementor-999 .elementor-element.elementor-element-8416378{font-size:18px;}}@media(max-width:767px){.elementor-999 .elementor-element.elementor-element-1526895{padding:100px 0px 50px 0px;}.elementor-999 .elementor-element.elementor-element-d1c2d6a .elementor-heading-title{font-size:50px;}}@media(min-width:1025px){.elementor-999 .elementor-element.elementor-element-1526895:not(.elementor-motion-effects-element-type-background), .elementor-999 .elementor-element.elementor-element-1526895 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-attachment:scroll;}}/* Start custom CSS for text-editor, class: .elementor-element-8416378 */.link:hover{
+    color: #E99701;
+}/* End custom CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Albra';
+	font-style: normal;
+	font-weight: 800;
+	font-display: auto;
+	src: url('../../2022/02/Albra-Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Albra';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('../../2022/02/Albra-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Albra';
+	font-style: normal;
+	font-weight: 300;
+	font-display: auto;
+	src: url('../../2022/02/Albra-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Albra';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('../../2022/02/Albra-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Albra';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('../../2022/02/Albra-Regular.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Ilisarniq';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('../../2022/02/Ilisarniq-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ilisarniq';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('../../2022/02/Ilisarniq-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ilisarniq';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('../../2022/02/Ilisarniq-Bold.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */
