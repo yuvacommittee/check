@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPPDS Visiontek Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 15px;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .header h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        
+        .header small {
+            color: #ecf0f1;
+            font-size: 0.8rem;
+        }
+        
+        .input-section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+        
+        .form-control:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+        
+        .btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #218838;
+        }
+        
+        .btn-danger {
+            background: #dc3545;
+        }
+        
+        .btn-primary {
+            background: #007bff;
+        }
+        
+        .summary-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .card p {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+        
+        .report-table {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th {
+            background: #34495e;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.85rem;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            font-size: 0.8rem;
+            padding: 10px;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .action-buttons button {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>📊 UPPDS Visiontek Report</h1>
+            <small>Logged in as: 87558 28456 (Mohai)</small>
+        </div>
+        
+        <!-- Input Section -->
+        <div class="input-section">
+            <h2 style="margin-bottom: 15px; color: #2c3e50;">Fetch Report</h2>
+            
+            <div class="form-group">
+                <label for="shopId">🏪 Shop ID</label>
+                <input type="text" id="shopId" class="form-control" placeholder="Enter SHOP ID" value="20530616">
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 15px;">
+                <div class="form-group">
+                    <label for="month">📅 Month</label>
+                    <select id="month" class="form-control">
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11" selected>November</option>
+                        <option value="12">December</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="year">📅 Year</label>
+                    <select id="year" class="form-control">
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option selected>2025</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button id="fetchBtn" class="btn">
+                <span id="loadingSpinner" style="display: none;">⏳</span>
+                📥 Fetch Report
+            </button>
+        </div>
+        
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Fetching report data...</p>
+        </div>
+        
+        <!-- Summary Cards -->
+        <div id="summarySection" class="summary-cards" style="display: none;">
+            <div class="card">
+                <h3 id="totalCards">0</h3>
+                <p>Total Cards Txns</p>
+            </div>
+            <div class="card">
+                <h3 id="totalWheat">0 Kg</h3>
+                <p>Total Wheat</p>
+            </div>
+            <div class="card">
+                <h3 id="totalRice">0 Kg</h3>
+                <p>Total Rice</p>
+            </div>
+            <div class="card">
+                <h3 id="commission">₹0</h3>
+                <p>Commission</p>
+            </div>
+        </div>
+        
+        <!-- Action Buttons -->
+        <div id="actionButtons" class="action-buttons" style="display: none;">
+            <button id="copyBtn" class="btn btn-primary">
+                📋 Copy Data
+            </button>
+            <button id="pdfBtn" class="btn btn-danger">
+                📄 Save as PDF
+            </button>
+        </div>
+        
+        <!-- Report Table -->
+        <div class="report-table">
+            <div style="padding: 15px; border-bottom: 1px solid #eee;">
+                <h3 style="color: #2c3e50;">Daily Transaction Report</h3>
+            </div>
+            
+            <div style="overflow-x: auto;">
+                <table id="reportTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Cards</th>
+                            <th>Wheat PHH</th>
+                            <th>Wheat AAY</th>
+                            <th>Rice PHH</th>
+                            <th>Rice AAY</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Data will load here -->
+                        <tr>
+                            <td colspan="6" style="text-align: center; padding: 20px; color: #7f8c8d;">
+                                No data available. Enter Shop ID and click Fetch Report.
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot id="tableFooter" style="display: none;">
+                        <!-- Totals will load here -->
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>Report Generated: <span id="currentDate"></span></p>
+            <p>Website: https://mispds.blogspot.com/</p>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
